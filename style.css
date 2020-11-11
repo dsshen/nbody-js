@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Space Mono";
+    src: url("./fonts/SpaceMono-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url("./fonts/SpaceMono-Bold.ttf");
+    font-weight: bold;
+}
+
+html,
+body {
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#myCanvas {
+    display: block;
+    border: 1px solid black;
+    background-image: url("./media/starfield.jpg");
+    background-size: cover;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+}
+
+#startStopButton {
+    background-color: #000000;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    padding: 25px 50px;
+    border-radius: 50px;
+    margin: 0 auto;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 300ms, color 300ms;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none; 
+}
+
+#startStopButton:hover {
+    cursor: pointer;
+    color: #f58025;
+}
+
+#startStopButton:active {
+    background-color: #464646;
+    transition: background-color 0ms;
+}
