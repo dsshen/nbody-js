@@ -79,7 +79,8 @@ body {
     cursor: pointer;
     display: none;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     width: 110px;
     text-align: center;
     transition: background-color 300ms;
