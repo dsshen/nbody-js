@@ -51,6 +51,10 @@ let animationIsRunning = false;
 // Store start/stop button as element object
 let startStopButton = document.getElementById("startStopButton");
 
+// Store "What's This?" button as element object
+let about = document.getElementById("about");
+let aboutButtonIsHidden = true;
+
 /***************************** FUNCTIONS **************************/
 
 // Function for initializing universe by reading universeStrSplit
@@ -156,6 +160,12 @@ function startAnimation() {
     resetUniverse();
     animation = window.setInterval(displayFrame, 40);
     audio.play();
+
+    // Display the "What's This" button the first time the animation starts
+    if (aboutButtonIsHidden) {
+        about.style.display = "block";
+        aboutButtonIsHidden = false;
+    }
 }
 
 // Function for stopping the animation. Called when "stop" button is pressed

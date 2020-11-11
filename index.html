@@ -8,10 +8,31 @@
     <title>NBody</title>
 </head>
 <body>
+    <!-- Initialize canvas element and toggle button -->
     <canvas id="myCanvas" width="500" height="500"></canvas>
     <div id="startStopButton">
         <p>Loading...</p>
     </div>
+
+    <!-- About this site -->
+    <div id="about">
+        <p>What's this?</p>
+    </div>
+
+    <!-- Modal box content -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modalContent">
+            <span class="close">&times;</span>
+            <p><span class="bold">This page contains a Javascript/HTML reimplementation of NBody, a classic Java programming assignment from COS 126 (Princeton's flagship intro CS course)</span>. The original assignment tasks the student with writing a Java program to simulate the motion of N bodies in the plane, mutually affected by gravitational forces (an example of <a href="https://en.wikipedia.org/wiki/N-body_simulation" target="_blank">N-body simulation</a>), and animate the results using instructor-provided APIs.</p>
+
+            <p>The assignment itself is quite simple, containing a handful of nested for-loops for performing physics calculations and roughly 100 total lines of Java code. <span class="bold">Its notoriety arises from the fact that students were expected to churn it out within the third week of the course, with many students having zero prior coding experience</span>. Thus, for perhaps <a href="https://www.cs.princeton.edu/news/students-reflect-cos-126-one-most-popular-university-courses" target="_blank">the majority</a> of Princeton undergraduates, the sheer elation upon seeing a crudely rendered solar system majestically rotating without flickering, floating away, or throwing a myriad of errors to the console, all to the tune of an appropriately crude MIDI rendition of "Also sprach Zarathustra," has become a defining moment of their undergraduate experience.</p>
+
+            <p>Source code on <a href="https://github.com/dsshen/NBody-JS" target="_blank">GitHub</a>. If you are currently enrolled in COS 126 and want to copy my code, a friendly reminder that academic integrity is a thing. That being said, if you are capable of comprehending the Javascript code and refactoring what you need into Java, you are more than capable of simply doing the assignment yourself in Java.</p>
+        </div>
+    </div>
+    <script src="modalBox.js"></script>
     <script src="NBody.js"></script>
 </body>
 </html>
