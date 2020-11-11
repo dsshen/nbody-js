@@ -45,7 +45,7 @@ ctx.translate(250, 250); // Dimensions of canvas object are 500x500px
 
 // Declare vars that will be used during starting/stopping animation
 let animation;                              // Stores instance of setInterval()
-let audio = new Audio("./media/2001.wav");  // Stores playback audio
+let audio = new Audio("./media/2001.mp3");  // Stores playback audio
 let animationIsRunning = false;
 
 // Store start/stop button as element object
