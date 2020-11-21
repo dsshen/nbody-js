@@ -1,4 +1,4 @@
-# NBody-JS
+# NBody
 
 This repository contains the source code for a web version of NBody, a classic Java programming assignment from COS 126 (Princeton's flagship intro CS course).
 
